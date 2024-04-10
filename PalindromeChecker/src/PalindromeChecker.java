@@ -1,8 +1,8 @@
-
-
 import java.util.Scanner;
 
 public class PalindromeChecker {
+
+    String input;
 
     public static String transformInput(String input) {
         input = input.toLowerCase();
@@ -13,11 +13,7 @@ public class PalindromeChecker {
 
     public static boolean checkPalindrome(String input) {
         String reverseString = new StringBuilder(input).reverse().toString();
-        if (input.equals(reverseString)) {
-            return true;
-        } else {
-            return false;
-        }
+        return input.equals(reverseString);
     }
 
     public static void main(String[] args) {
@@ -35,4 +31,9 @@ public class PalindromeChecker {
             System.out.println("The transformed input is not a palindrome.");
         }
     }
+
+
+
+
+
 }
